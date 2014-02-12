@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB67D9B18A5F6C700F86738 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB67D9A18A5F6C600F86738 /* Foundation.framework */; };
+		3DB67D9E18A5F6C700F86738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB67D9D18A5F6C700F86738 /* main.m */; };
+		3DB67DA218A5F6C700F86738 /* CommandLineTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DB67DA118A5F6C700F86738 /* CommandLineTest.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB67D9518A5F6C600F86738 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3DB67DA218A5F6C700F86738 /* CommandLineTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3DB67D9718A5F6C600F86738 /* CommandLineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB67D9A18A5F6C600F86738 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DB67D9D18A5F6C700F86738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DB67DA018A5F6C700F86738 /* CommandLineTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommandLineTest-Prefix.pch"; sourceTree = "<group>"; };
+		3DB67DA118A5F6C700F86738 /* CommandLineTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CommandLineTest.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB67D9418A5F6C600F86738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB67D9B18A5F6C700F86738 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB67D8E18A5F6C600F86738 = {
+			isa = PBXGroup;
+			children = (
+				3DB67D9C18A5F6C700F86738 /* CommandLineTest */,
+				3DB67D9918A5F6C600F86738 /* Frameworks */,
+				3DB67D9818A5F6C600F86738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB67D9818A5F6C600F86738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67D9718A5F6C600F86738 /* CommandLineTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB67D9918A5F6C600F86738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67D9A18A5F6C600F86738 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB67D9C18A5F6C700F86738 /* CommandLineTest */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67D9D18A5F6C700F86738 /* main.m */,
+				3DB67DA118A5F6C700F86738 /* CommandLineTest.1 */,
+				3DB67D9F18A5F6C700F86738 /* Supporting Files */,
+			);
+			path = CommandLineTest;
+			sourceTree = "<group>";
+		};
+		3DB67D9F18A5F6C700F86738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB67DA018A5F6C700F86738 /* CommandLineTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB67D9618A5F6C600F86738 /* CommandLineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB67DA518A5F6C700F86738 /* Build configuration list for PBXNativeTarget "CommandLineTest" */;
+			buildPhases = (
+				3DB67D9318A5F6C600F86738 /* Sources */,
+				3DB67D9418A5F6C600F86738 /* Frameworks */,
+				3DB67D9518A5F6C600F86738 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLineTest;
+			productName = CommandLineTest;
+			productReference = 3DB67D9718A5F6C600F86738 /* CommandLineTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB67D8F18A5F6C600F86738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = William;
+			};
+			buildConfigurationList = 3DB67D9218A5F6C600F86738 /* Build configuration list for PBXProject "CommandLineTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DB67D8E18A5F6C600F86738;
+			productRefGroup = 3DB67D9818A5F6C600F86738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB67D9618A5F6C600F86738 /* CommandLineTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB67D9318A5F6C600F86738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB67D9E18A5F6C700F86738 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3DB67DA318A5F6C700F86738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DB67DA418A5F6C700F86738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3DB67DA618A5F6C700F86738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandLineTest/CommandLineTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DB67DA718A5F6C700F86738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandLineTest/CommandLineTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB67D9218A5F6C600F86738 /* Build configuration list for PBXProject "CommandLineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB67DA318A5F6C700F86738 /* Debug */,
+				3DB67DA418A5F6C700F86738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB67DA518A5F6C700F86738 /* Build configuration list for PBXNativeTarget "CommandLineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB67DA618A5F6C700F86738 /* Debug */,
+				3DB67DA718A5F6C700F86738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB67D8F18A5F6C600F86738 /* Project object */;
+}
