@@ -74,13 +74,13 @@
 - (void)subtractTime{
     if (count != 0){
         seconds--;
-        //[secondBeep play];
+        [secondBeep play];
         timerLabel.text = [NSString stringWithFormat:@"Time: %i", seconds];
         
         if (seconds == 0){
             NSString *getLife = @"Dude, get a life...";
-            NSString *okMaybe = @"You're ok... for a fuckhead";
-            NSString *awful = @"Ha! You fucking suck";
+            NSString *okMaybe = @"You're ok... for a loser";
+            NSString *awful = @"Ha! You suck";
             NSString *message;
             if (count >= 250){
                 message = getLife;

@@ -29,9 +29,9 @@ int main(int argc, const char * argv[])
             } else if (guess < answer){
                 NSLog(@"Too low! Guess a higher number.");
             } else {
-                NSLog(@"Congratulations, you fucking win!");
+                NSLog(@"Congratulations, you win!");
                 NSLog(@"The answer was: %i", answer);
-                NSLog(@"It only took you %i tries dumbass!", turnCount);
+                NSLog(@"It only took you %i tries!", turnCount);
             }
         }
         
