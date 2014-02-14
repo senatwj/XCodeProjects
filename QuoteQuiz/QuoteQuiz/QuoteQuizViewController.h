@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Quiz;
+
 @interface QuoteQuizViewController : UIViewController
+
+@property (nonatomic, assign) NSInteger quizIndex;
+@property (nonatomic, strong) Quiz *quiz;
 
 @end

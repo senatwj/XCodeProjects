@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6178BE18AD8EB100E00C76 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6178BD18AD8EB100E00C76 /* Quiz.m */; };
+		3D6178C018AD913A00E00C76 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D6178BF18AD913A00E00C76 /* quotes.plist */; };
 		3DC12CAD18AD895900857648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC12CAC18AD895900857648 /* UIKit.framework */; };
 		3DC12CAF18AD895900857648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC12CAE18AD895900857648 /* Foundation.framework */; };
 		3DC12CB118AD895900857648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC12CB018AD895900857648 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D6178BC18AD8EB100E00C76 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		3D6178BD18AD8EB100E00C76 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		3D6178BF18AD913A00E00C76 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 		3DC12CA918AD895900857648 /* QuoteQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC12CAC18AD895900857648 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC12CAE18AD895900857648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,8 +91,11 @@
 				3DC12CBB18AD895A00857648 /* QuoteQuizAppDelegate.h */,
 				3DC12CBC18AD895A00857648 /* QuoteQuizAppDelegate.m */,
 				3DC12CC418AD895A00857648 /* MainStoryboard.storyboard */,
+				3D6178BC18AD8EB100E00C76 /* Quiz.h */,
+				3D6178BD18AD8EB100E00C76 /* Quiz.m */,
 				3DC12CC718AD895A00857648 /* QuoteQuizViewController.h */,
 				3DC12CC818AD895A00857648 /* QuoteQuizViewController.m */,
+				3D6178BF18AD913A00E00C76 /* quotes.plist */,
 				3DC12CB318AD895900857648 /* Supporting Files */,
 			);
 			path = QuoteQuiz;
@@ -164,6 +172,7 @@
 				3DC12CC118AD895A00857648 /* Default@2x.png in Resources */,
 				3DC12CC318AD895A00857648 /* Default-568h@2x.png in Resources */,
 				3DC12CC618AD895A00857648 /* MainStoryboard.storyboard in Resources */,
+				3D6178C018AD913A00E00C76 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				3DC12CB918AD895900857648 /* main.m in Sources */,
 				3DC12CBD18AD895A00857648 /* QuoteQuizAppDelegate.m in Sources */,
 				3DC12CC918AD895A00857648 /* QuoteQuizViewController.m in Sources */,
+				3D6178BE18AD8EB100E00C76 /* Quiz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +309,7 @@
 				3DC12CCE18AD895A00857648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
