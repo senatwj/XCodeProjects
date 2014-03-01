@@ -15,19 +15,27 @@
 
 @implementation SimpleTableViewController
 
-NSArray *tableData;
-NSArray *thumbnails;
-NSArray *prepTime;
+NSMutableArray *tableData;
+NSMutableArray *thumbnails;
+NSMutableArray *prepTime;
 NSMutableArray *checkmarked;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    /*tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     thumbnails = [NSArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
-    prepTime = [NSArray arrayWithObjects:@"30 min", @"1 hour", @"5 hours", @"20 min", @"10 min", @"30 sec", @"12 days", @"2 hours", @"25 min", @"10 min", @"5 days", @"2 min", @"2 years", @"1 min", @"25 sec", @"45 min", nil];
-    NSNumber *defaultChecked = [NSNumber numberWithInt:0];
+    prepTime = [NSArray arrayWithObjects:@"30 min", @"1 hour", @"5 hours", @"20 min", @"10 min", @"30 sec", @"12 days", @"2 hours", @"25 min", @"10 min", @"5 days", @"2 min", @"2 years", @"1 min", @"25 sec", @"45 min", nil];*/
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
+    
+    NSDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    tableData = [dict objectForKey:@"RecipeName"];
+    thumbnails = [dict objectForKey:@"Thumbnail"];
+    prepTime = [dict objectForKey:@"PrepTime"];
+    
+    NSNumber *defaultChecked = [NSNumber numberWithBool:NO];
     checkmarked = [NSMutableArray arrayWithObjects:defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, defaultChecked, nil];
 }
 
@@ -55,7 +63,7 @@ NSMutableArray *checkmarked;
     
     NSNumber *isChecked = [checkmarked objectAtIndex:indexPath.row];
     
-    if ([isChecked intValue] == 0){
+    if ([isChecked boolValue] == NO){
         cell.accessoryType = UITableViewCellAccessoryNone;
     } else {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -82,12 +90,12 @@ NSMutableArray *checkmarked;
     NSNumber *check;
     UIAlertView *messageAlert;
         
-    if ([isChecked intValue] == 0){
-        check = [NSNumber numberWithInt:1];
+    if ([isChecked boolValue] == NO){
+        check = [NSNumber numberWithBool:YES];
         messageAlert = [[UIAlertView alloc] initWithTitle:@"Row Selected" message:foodName delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
-        check = [NSNumber numberWithInt:0];
+        check = [NSNumber numberWithBool:NO];
         messageAlert = [[UIAlertView alloc] initWithTitle:@"Row Deselected" message:foodName delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
@@ -95,6 +103,16 @@ NSMutableArray *checkmarked;
     [checkmarked replaceObjectAtIndex:indexPath.row withObject:check];
     //[messageAlert show];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableData removeObjectAtIndex:indexPath.row];
+    [thumbnails removeObjectAtIndex:indexPath.row];
+    [prepTime removeObjectAtIndex:indexPath.row];
+    [checkmarked removeObjectAtIndex:indexPath.row];
+    
+    [tableView reloadData];
 }
 
 @end

@@ -36,6 +36,9 @@
 		3D40E96618BF097D007E2D3A /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E95618BF097D007E2D3A /* white_chocolate_donut.jpg */; };
 		3D40E96818BF0AD2007E2D3A /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E96718BF0AD2007E2D3A /* SimpleTableCell.xib */; };
 		3D40E96B18BF0D69007E2D3A /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40E96A18BF0D69007E2D3A /* SimpleTableCell.m */; };
+		3DC9006518C17834009327F2 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9006418C17834009327F2 /* recipes.plist */; };
+		3DC9006818C17FBB009327F2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9006618C17FBB009327F2 /* Default.png */; };
+		3DC9006918C17FBB009327F2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9006718C17FBB009327F2 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		3D40E96718BF0AD2007E2D3A /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 		3D40E96918BF0D69007E2D3A /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		3D40E96A18BF0D69007E2D3A /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		3DC9006418C17834009327F2 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		3DC9006618C17FBB009327F2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3DC9006718C17FBB009327F2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 		3D40E91618BEF482007E2D3A = {
 			isa = PBXGroup;
 			children = (
+				3DC9006618C17FBB009327F2 /* Default.png */,
+				3DC9006718C17FBB009327F2 /* Default@2x.png */,
 				3D40E92818BEF482007E2D3A /* SimpleTable */,
 				3D40E92118BEF482007E2D3A /* Frameworks */,
 				3D40E92018BEF482007E2D3A /* Products */,
@@ -145,6 +153,7 @@
 				3D40E96718BF0AD2007E2D3A /* SimpleTableCell.xib */,
 				3D40E96918BF0D69007E2D3A /* SimpleTableCell.h */,
 				3D40E96A18BF0D69007E2D3A /* SimpleTableCell.m */,
+				3DC9006418C17834009327F2 /* recipes.plist */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -237,6 +246,9 @@
 				3D40E96518BF097D007E2D3A /* vegetable_curry.jpg in Resources */,
 				3D40E96618BF097D007E2D3A /* white_chocolate_donut.jpg in Resources */,
 				3D40E96818BF0AD2007E2D3A /* SimpleTableCell.xib in Resources */,
+				3DC9006518C17834009327F2 /* recipes.plist in Resources */,
+				3DC9006818C17FBB009327F2 /* Default.png in Resources */,
+				3DC9006918C17FBB009327F2 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +385,7 @@
 				3D40E94418BEF482007E2D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
