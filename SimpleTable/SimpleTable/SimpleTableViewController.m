@@ -13,12 +13,13 @@
 
 @end
 
-@implementation SimpleTableViewController
+@implementation SimpleTableViewController{
 
-NSMutableArray *tableData;
-NSMutableArray *thumbnails;
-NSMutableArray *prepTime;
-NSMutableArray *checkmarked;
+    NSMutableArray *tableData;
+    NSMutableArray *thumbnails;
+    NSMutableArray *prepTime;
+    NSMutableArray *checkmarked;
+}
 
 - (void)viewDidLoad
 {
