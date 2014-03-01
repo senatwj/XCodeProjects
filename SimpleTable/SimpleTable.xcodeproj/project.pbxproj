@@ -13,8 +13,6 @@
 		3D40E92D18BEF482007E2D3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E92B18BEF482007E2D3A /* InfoPlist.strings */; };
 		3D40E92F18BEF482007E2D3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40E92E18BEF482007E2D3A /* main.m */; };
 		3D40E93318BEF482007E2D3A /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40E93218BEF482007E2D3A /* SimpleTableAppDelegate.m */; };
-		3D40E93518BEF482007E2D3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E93418BEF482007E2D3A /* Default.png */; };
-		3D40E93718BEF482007E2D3A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E93618BEF482007E2D3A /* Default@2x.png */; };
 		3D40E93918BEF482007E2D3A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E93818BEF482007E2D3A /* Default-568h@2x.png */; };
 		3D40E93C18BEF482007E2D3A /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40E93B18BEF482007E2D3A /* SimpleTableViewController.m */; };
 		3D40E93F18BEF482007E2D3A /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D40E93D18BEF482007E2D3A /* SimpleTableViewController.xib */; };
@@ -52,8 +50,6 @@
 		3D40E93018BEF482007E2D3A /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
 		3D40E93118BEF482007E2D3A /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
 		3D40E93218BEF482007E2D3A /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
-		3D40E93418BEF482007E2D3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3D40E93618BEF482007E2D3A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3D40E93818BEF482007E2D3A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3D40E93A18BEF482007E2D3A /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		3D40E93B18BEF482007E2D3A /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
@@ -165,8 +161,6 @@
 				3D40E92B18BEF482007E2D3A /* InfoPlist.strings */,
 				3D40E92E18BEF482007E2D3A /* main.m */,
 				3D40E93018BEF482007E2D3A /* SimpleTable-Prefix.pch */,
-				3D40E93418BEF482007E2D3A /* Default.png */,
-				3D40E93618BEF482007E2D3A /* Default@2x.png */,
 				3D40E93818BEF482007E2D3A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -225,8 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D40E92D18BEF482007E2D3A /* InfoPlist.strings in Resources */,
-				3D40E93518BEF482007E2D3A /* Default.png in Resources */,
-				3D40E93718BEF482007E2D3A /* Default@2x.png in Resources */,
 				3D40E93918BEF482007E2D3A /* Default-568h@2x.png in Resources */,
 				3D40E93F18BEF482007E2D3A /* SimpleTableViewController.xib in Resources */,
 				3D40E95718BF097D007E2D3A /* angry_birds_cake.jpg in Resources */,
